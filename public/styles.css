@@ -2,3 +2,8 @@ body{
     color : white;
     background: rgb(119, 178, 255);
 }
+
+.titulo{
+    border: 1000px;
+    border-color: black;
+}
