@@ -26,7 +26,7 @@ const produtos = [
   for (let produto of produtos){
     console.log(produto.titulo)
   }
-  console.log(buscarProduto(2))
+  console.log(buscarProduto(1))
 
 app.get('/', (req, res) => {
   res.render('index', { produtos });
@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 
 app.get('/produtos/:id', (req, res) => {
   const produto = buscarProduto(req.params.id)
-  res.render('produtos', { produto });
+res.render('produtos', {  produto });
 });
 
 app.listen(port, () => {

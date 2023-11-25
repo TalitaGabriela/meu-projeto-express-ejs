@@ -32,31 +32,45 @@
 </nav>
 
 <!--produto--> 
-<div class="card mb-3 bg-warning bg-opacity-50" style="max-width: 100%; border-color: black;">
-  <div class="row g-0">
-    <div class="col-md-8">
-      <img src="https://ae01.alicdn.com/kf/Hd21918015f524bf5ae2fd5839eec9eec1/Chaveiro-de-astrologia-com-12-signos-chaveiro-de-madeira-com-constela-o-de-arte-em-madeira.jpg_Q90.jpg" class="d-block w-50" alt="..." style="border-radius: 2px; border-color:black;">
+<div class="container" style="width: 50%;">
+  <!--Card 1-->
+  <div class="card card-1">
+    <!--card-header-->
+    <div class="card-header">
+      <a href="/produtos">
+        <img
+          src="https://ae01.alicdn.com/kf/Hd21918015f524bf5ae2fd5839eec9eec1/Chaveiro-de-astrologia-com-12-signos-chaveiro-de-madeira-com-constela-o-de-arte-em-madeira.jpg_Q90.jpg"
+          class="card-img"
+          alt="produto"
+        />
+      </a>
     </div>
+    <!--/card-header-->
+
+    <!--card-body-->
+    <div class="card-body">
+      <h3 class="card-local">Chaveiro Astrológico</h3>
+      <h2 class="carda-titulo">R$ 15,00</h2>
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-       <h4 class="card-title" style="color: black;"><strong>Chaveiro Astrológico</strong></h4>
-        <h3 style="color: black;"><strong>R$ 15,00</strong></h3></br>
-        <h5 class="card-text" style="color:black;">Chaveiro Astrológico de signos, adiquira já o seu!!!</h5>
-        <button class="card-button" style="color:black; border-color: black;">COMPRAR</button>
-      </div>
+    <!--/card-body-->
+
+    <!--card-footer-->
+    <div class="card-footer">
+      </a><button class="card-button" style="color:black; border-color: black;">COMPRAR</button>
     </div>
+    <!--/card-footer-->
   </div>
-</div></br>
+  <!--/Card 1-->
+</div>
 
-
-    <!--início:produtos-->
-    <div class="p-3 mb-2 bg-light text-dark"><h3 class="text-start">Store</h3><h3 class="text-end"><button type="button" class="btn btn-outline-dark">BROWSE ALL</button></h3>  
-      <div class="container text-center">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
-      <% for (let produto of produtos){ %>
-      <div class="col"><a href="/produtos/<%= produto.id%>"><img src="<%= produto.imagem%>" class="d-block w-100" alt="..."></a><h2><%= produto.titulo%></h2><h4><%= produto.valor%></h4></div>
-      <% } %> 
+  
+<!--início:produtos-->
+  <div class="p-3 mb-2 bg-light text-dark"><h3 class="text-start">STORE</h3><h3 class="text-end"></h3>      
+  <div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+  <% for (let produto of produtos){ %>
+  <div class="col"><a href="/produtos/<%= produto.id%>"><img src="<%= produto.imagem%>" class="d-block w-100" alt="..."></a><h2><%= produto.titulo%></h2><h4><%= produto.valor%></h4></div>
+  <% } %> 
    </div>
   </div>   
  </div>
@@ -84,9 +98,10 @@
     <div class="bg-warning p-2 text-dark bg-opacity-75"><div class="container text-center">
   <div class="row">
     <div class="col">
-      <p align=left><strong>☻Copyright 2022 </strong>by Talita Gabriela</p>
+      <p align=left><strong>☻Copyright 2023 </strong></p>
     </div>
     <div class="col order-5">
+      <p align=right>Made by Talita Gabriela</p>
     </div>
     <div class="col order-1">
     </div>
