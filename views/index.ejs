@@ -99,7 +99,10 @@
   <div class="container text-center">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
   <% for (let produto of produtos){ %>
-  <div class="col"><a href="/produtos/<%= produto.id%>"><img src="<%= produto.imagem%>" class="d-block w-100" alt="..."></a><h2><%= produto.titulo%></h2><h4><%= produto.valor%></h4></div>
+  <div class="col"><a href="/produtos/<%= produto.id %>">
+    <img src="<%= produto.imagem%>" class="d-block w-100" alt="..."></a>
+    <h2><%= produto.titulo%></h2>
+    <h4><%= produto.valor%></h4></div>
   <% } %> 
    </div>
   </div>   

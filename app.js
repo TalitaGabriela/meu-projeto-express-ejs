@@ -26,13 +26,13 @@ const produtos = [
   for (let produto of produtos){
     console.log(produto.titulo)
   }
-  console.log(buscarProduto(1))
 
 app.get('/', (req, res) => {
   res.render('index', { produtos });
 });
 
 app.get('/produtos/:id', (req, res) => {
+  //const produto = buscarProduto(req.params.id)//
   const produto = buscarProduto(req.params.id)
 res.render('produtos', {  produto });
 });
